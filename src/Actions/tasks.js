@@ -10,7 +10,7 @@ export const getTasks = () => async (dispatch) => {
     }
 }
 
-export const craeteTask = (task) => async (dispatch) => {
+export const createTask = (task) => async (dispatch) => {
     try {
         const { data } = await api.createTask(task);
         dispatch({ type: "CREATE", payload: data });
