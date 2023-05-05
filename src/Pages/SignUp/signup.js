@@ -46,11 +46,11 @@ const Signup = () => {
                 <h2>Focalize</h2>
             </div>
             <form onClick={handleFormSubmit} className='auth_form'>
-                <div className='auth_sub_conatiner'>
-                    <label for='firstname'>First Name</label>
-                    <label for='lastname'>Last Name</label>
-                </div>
-                <div className='auth_sub_conatiner'>
+                {/* <div className='auth_sub_conatiner'>
+                </div> */}
+                {/* <div className='auth_sub_conatiner'>
+                </div> */}
+                <label for='firstname'>First Name</label>
                     <input 
                         type='text'
                         className='auth_input'
@@ -60,6 +60,7 @@ const Signup = () => {
                         onChange={handleChange}
                         placeholder='First Name'
                     />
+                    <label for='lastname'>Last Name</label>
                     <input 
                         type='text'
                         className='auth_input'
@@ -69,7 +70,6 @@ const Signup = () => {
                         onChange={handleChange}
                         placeholder='Last Name'
                     />
-                </div>
                 <label for='email'>Email</label>
                 <input 
                     type='text'
@@ -86,7 +86,7 @@ const Signup = () => {
                     className='auth_input'
                     id='password'
                     value={formValue.password}
-                    name='passowrd'
+                    name='password'
                     onChange={handleChange}
                     placeholder='Enter Your Password'
                 />
@@ -102,7 +102,7 @@ const Signup = () => {
                     className='auth_input'
                     id='confirmpassword'
                     value={formValue.confirm_password}
-                    name='confirm_passowrd'
+                    name='confirm_password'
                     onChange={handleChange}
                     placeholder='Re-enter Your Password'
                 />
